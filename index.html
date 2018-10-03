@@ -3,6 +3,7 @@
 	<head>
 		<title>Crianças Felizes!</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
@@ -12,14 +13,19 @@
 				<h1 class="h1menu">A sua ajuda pode mudar esse nosso lugar!</h1>	
 			<div class="menurolativo">
 				<nav class="menu">
+					<div class="menures">
+						<div class="hambuerguer"></div>
+						<div class="hambuerguer"></div>
+						<div class="hambuerguer"></div>
+					</div>
 				  <div class="divimgmenu">
 				  	<img class="imgmenu" src="assets/logo2.jpg">
 				  </div>
 				  <div class="textomenu" id="textomenu">
-					<a class="linkmenu1" id="linkmenu1" href="#sobre">Sobre</a>
-					<a class="linkmenu2" id="linkmenu2" href="#atividades">Atividades</a>
-					<a class="linkmenu3" id="linkmenu3" href="#parceiros">Parceiros</a>
-					<a class="linkmenu4" id="linkmenu4" href="#contatos">Contatos</a>
+					<a class="linkmenu" id="linkmenu1" href="#sobre">Sobre</a>
+					<a class="linkmenu" id="linkmenu2" href="#atividades">Atividades</a>
+					<a class="linkmenu" id="linkmenu3" href="#parceiros">Parceiros</a>
+					<a class="linkmenu" id="linkmenu4" href="#contatos">Contatos</a>
 				  </div>
 				</nav> 
 			</div>
@@ -31,7 +37,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="sec_ativ">
+			<section class="sec_ativ" tabindex="2" id="Atividades">
 				<div class="div_ativ_mae">	
 					<div class="sec_ativ_div">
 						<p class="sec_ativ_p">O <strong>Projeto Crianças Felizes</strong> é uma iniciativa do Luciano Daniel, jovem morador do alemão, que aos 13 anos de idade fundou o projeto na intenção de reduzir as mazelas trazidas pelas obras do Pac.<br><br>Depois que o Programa do Governo Federal passou pela comunidade, uma série de problemas começaram a surgir, como esgoto a céu aberto, entulhos das casas derrubadas, acúmulo de lixo em local impróprio para o descarte.<br><br> Em 4 de maio de 2013, o projeto surge como forma de resistência, promovendo desde então, mais de 20 ações que beneficiaram mais de 8.000 crianças.</p>
@@ -48,9 +54,12 @@
 			</section>
 		</main>
 		<footer>
+			<div class="imgdofooter">
+				<img class="imgdofooter_img" src="cf.png">
+			</div>
 			<div class="partnav"></div>
 			<div class="divcolumn">
-				<div class="parceiros" id="parceiros">
+				<div class="parceiros" tabindex="3" id="Parceiros">
 					<h1 class="h1parceiros">PARCEIROS</h1>
 					<div class="logos">
 						<img class="logo1" src="assets/Group 153.svg">
@@ -60,7 +69,7 @@
 				</div>
 				<div class="backgroundctts">
 						<h1 class="h1contato">CONTATO</h1>
-					<div class="divcontatos">
+					<div class="divcontatos"  tabindex="4" id="Contato">
 						<p class="p1">Estamos sempre precisando de voluntários<br> e parceiros para concretizar as ações.</p><br>
 						<br>
 						<p class="p2">Nos ajude a continuar esse movimento!</p><br>
@@ -70,6 +79,12 @@
 					</div>
 				</div>
 			</div>
+			<div class="vainaweb">
+				<img class="vainaweb_img" src="unnamed.png">
+				<p class="vainaweb_p">Desenvolvido por</p>
+			</div>
 		</footer>
+		<script src="jquery.js"></script>
+		<script src="menu.js"></script>
 	</body>
 </html>
